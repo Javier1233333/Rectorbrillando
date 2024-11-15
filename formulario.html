@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Correo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Enviar Correo Electrónico</h1>
+<form class="suscripcion10" action="email.php" method="POST">
+    <label for="email">Correo del destinatario:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="subject">Asunto:</label>
+    <input type="text" id="subject" name="subject" required><br><br>
+
+    <label for="body">Mensaje:</label>
+    <textarea id="body" name="body" rows="5" cols="40" required></textarea><br><br>
+
+    <input type="submit" value="Enviar Correo">
+</form>
+</body>
+</html>

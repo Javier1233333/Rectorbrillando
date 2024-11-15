@@ -1,0 +1,53 @@
+/* estilos.css */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e9ecef;
+}
+
+.card {
+    position: relative;
+    width: 50vw;
+    height: 50vw;
+    max-width: 800px;
+    max-height: 800px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    background-image: url('img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+h2 {
+    font-family: 'Banbury', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 580px;
+    background-color: #ffb44b;
+    padding: 10px 15px; /* Espacio interno alrededor del texto */
+    display: inline-block; /* Ajuste al tamaño del contenido */
+    border-radius: 15px; /* Esquinas redondeadas */
+}
+
+p {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    text-align: right;
+    margin: 0;
+    background-color: #ffb44b;
+    padding: 5px 10px; /* Espacio interno alrededor del texto */
+    display: inline-block; /* Ajuste al tamaño del contenido */
+    border-radius: 10px; /* Esquinas redondeadas */
+}

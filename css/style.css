@@ -1,0 +1,560 @@
+/*font-family: 'Julius Sans One', sans-serif;
+ font-family:'Noto Sans JP', sans-serif;*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body {
+    background-color: rgb(182, 180, 180);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+.img1{
+  max-width: 50%;
+  display: block;
+  margin: auto;
+}
+
+.contenedor{
+  max-width: 100rem;
+  margin: 0 auto;
+
+}
+p{
+  font-size: 1.8rem;
+  font-family:'Noto Sans JP', sans-serif;
+  color: rgb(0, 0, 0); 
+  text-align: justify;
+
+}
+.contenido{
+  font-size: 1.8rem;
+  font-family:'Noto Sans JP', sans-serif;
+  color: rgb(0, 0, 0); 
+  text-align: justify;
+}
+.contenido1{
+
+    font-size: 1.8rem;
+    font-family:'Noto Sans JP', sans-serif;
+    color: rgb(0, 0, 0); 
+    text-align: justify;
+}
+h1,h2,h3{
+  text-align:center ;
+  color: rgb(255, 255, 255);
+  font-family: 'Noto Sans JP', sans-serif;;
+}
+h1{
+  font-size: 4rem;
+
+}
+h2{
+  font-size: 3.2rem;
+  
+}
+h3{
+  font-size: 2.4rem;
+  
+}
+
+@media (min-width: 68px){
+  .header {
+    display: grid;
+    justify-content: center;
+
+    grid-template-rows: repeat(2, 75px);
+  }
+}
+.header__logo{
+  margin-left: 1rem;
+  margin-top: 2rem;
+
+
+}
+.header__logo2{
+  margin: 2rem 0;
+  width: 180%;
+
+}
+.header__logo1{
+
+  width: 8%;
+  
+
+  margin-left: 1rem;
+  margin-top: 2rem;
+
+
+}
+.footer{
+  background-color: rgb(0, 0, 0);
+  padding: 0.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-family:'Noto Sans JP', sans-serif;
+  color: white;
+
+}
+
+.footer1{
+background-color: rgb(0, 0, 0);
+padding: 0.5rem;
+margin-top: 2rem;
+text-align: center;
+  color: white;
+
+  font-family:'Noto Sans JP', sans-serif;
+width: 100%;
+bottom: 0;
+position: absolute;
+}
+
+.footer__texto1 {
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.footer__texto {
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  font-size: 2.2rem;
+  color: white;
+}
+.navegacion{
+  background-color: rgb(0, 0, 0);
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navegacion__enlace{
+  font-family: 'Julius Sans One', sans-serif;
+  color: white;
+  font-size: 2rem;
+  
+}
+
+.navegacion__enlace:last-of-type{
+  margin-right: 0;
+}
+.navegacion__enlace--activo,.navegacion__enlace:hover 
+{color:rgb(26, 22, 22)}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  gap: 2rem;
+  
+}
+@media (min-width: 768px){
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.producto{
+background-color: rgb(143, 120, 69);
+padding: .5rem;
+text-align: center;
+
+}
+.producto__img{
+  width: 90%;
+
+}
+.producto__img--activo,.producto__img:hover 
+{width: 95%;
+
+
+}
+
+@media (min-width: 768px) {
+  .contenedor_registro {
+    max-width: 40rem;  
+  }
+}
+
+
+.producto__nombre{
+font-size: 2rem;
+}
+.producto__precio{
+font-size: 1rem;
+}
+.producto__precio,.producto__nombre{
+  font-family:'Noto Sans JP', sans-serif;
+  margin: 1rem  0;
+  text-align: center;
+  line-height: 1.2;
+}
+.grafico{
+min-height: 30rem;
+Background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 3;
+}
+.grafico--barberia{
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+  background-image: url(../Images/Agenda\,\ ya!!!1.png);
+}
+.nosotros {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+@media (min-width: 768px) {
+  .nosotros {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+  }
+}
+.nosotros1 {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+@media (min-width: 768px) {
+  .nosotros1 {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+  }
+}
+.nosotros
+.nosotros__imagen {
+  grid-row: 1 / 2;
+  width: auto;
+}
+@media (min-width: 768px) {
+  .nosotros__imagen {
+     grid-column: 2 / 3;
+  }
+}
+
+.bloques {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .bloques {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.bloque {
+  text-align: center;
+}
+
+.bloque__titulo {
+  margin: 0;
+}
+.boton {
+  background-color: rgb(255, 255, 255);
+  color: rgb(56, 50, 50);
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+  font-size: 4rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  font-family: 'Julius Sans One', sans-serif;
+  
+ 
+}
+.contenidohero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  justify-content: center;
+
+}
+@media (min-width: 768px){
+  .camisa{display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+column-gap: 2rem;}
+}
+.boton1 {
+  background-color: #607d8b;
+  color: rgb(255, 254, 254);
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  font-size: 4rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  font-family: 'Julius Sans One', sans-serif;
+  
+ 
+}
+.inframe {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.inframe iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*Forms format*/
+
+.contenedor_registro{
+  font-size: 1em;
+  color: #e4dede;
+  background: #2f2c2c;
+  padding: 0.7em 1em;
+  text-align: center;
+  margin: 1.5em auto;
+  border-radius: 10px;
+  transition: 0.5s all;
+
+
+}
+.suscripcion {
+  background-color: #918989;
+  padding: 5px;
+  text-align: center;
+}
+
+.suscripcion h2 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.suscripcion input {
+
+  background-color: rgb(255, 248, 248);
+
+  color: #020202;
+  font-family: 'Julius Sans One', sans-serif;
+  padding: 4px 2rem;
+  margin: 1px ;
+  box-sizing: border-box;
+  border: 1.5px solid #000000;
+  border-radius: 10px;
+}
+
+.suscripcion select  {
+
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: 'Julius Sans One', sans-serif;
+  padding: 2px;
+  margin: 8px ;
+  box-sizing: border-box;
+  border: 1.5px solid #000000;
+  border-radius: 10px;
+}
+
+.suscripcion input[type="submit"] {
+  background-color: rgb(51, 51, 50);
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  border: none;
+
+  
+}
+
+
+.suscripcion input[type="submit"]:hover {
+  background-color: rgb(255, 248, 248);
+}
+
+/*Registrate format*/
+.suscripcion1 h2 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.suscripcion1 input {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #000000;
+
+  font-size: 0.9em;
+  padding: 0.5em 1em;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: none;
+  text-decoration: none;
+  background-color: rgb(255, 248, 248);
+
+}
+.suscripcion1 input[type="submit"] {
+  background-color: rgb(124, 121, 121);
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  outline-width: 0;
+  border: none;
+
+
+  
+}
+
+.suscripcion1 input[type="submit"]:hover {
+  background-color: rgb(52, 85, 34);
+}
+.suscripcion10 {
+
+  padding: 5px;
+  text-align: center;
+}
+.suscripcion10 input {
+  
+  background-color: rgb(57, 55, 51);
+
+  color: #fff8f8;
+  font-family: 'Julius Sans One', sans-serif;
+  padding: 5px ;
+  margin: 1px ;
+  width: 100%;
+
+  box-sizing: border-box;
+  border: 1.5px solid #000000;
+  border-radius: 5px;
+  text-align: center;
+
+}
+.suscripcion10 input[type="submit"] {
+  background-color: rgb(47, 44, 44);
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: none;
+
+
+  
+}
+
+.suscripcion10 input[type="submit"]:hover {
+  background-color: rgb(123, 36, 30);
+}
+.suscripcion10 select  {
+
+  background-color: rgb(57, 55, 51);
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  border: none;
+
+}
+
+
+
+.contenedoro {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+.imagenoro{
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 100%;
+  border: 3px solid rgb(0, 0, 0);
+  border-collapse:  collapse;
+
+}
+th, td {
+  width: 10%;
+  text-align: left;
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+
+
+}
+.suscripcion9 {
+
+  padding: 5px;
+  text-align: center;
+}
+.suscripcion9 input {
+
+  background-color: rgb(57, 55, 51);
+
+  color: #fff8f8;
+  font-family: 'Julius Sans One', sans-serif;
+  padding: 5px ;
+  margin: 1px ;
+  width: 100%;
+
+  box-sizing: border-box;
+  border: 1.5px solid #000000;
+  border-radius: 5px;
+  text-align: center;
+
+}
+.suscripcion9 input[type="submit"] {
+  background-color: rgb(47, 44, 44);
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: none;
+
+
+
+}
+
+.suscripcion9 input[type="submit"]:hover {
+  background-color: rgb(52, 163, 15);
+}
+.suscripcion9 select  {
+
+  background-color: rgb(57, 55, 51);
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  border: none;
+
+}
+
