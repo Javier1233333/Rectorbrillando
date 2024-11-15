@@ -52,7 +52,7 @@ if (isset($_POST['idprofesores'])) {
                 exit;
             }
 
-            // HTML with embedded base64 image
+            // Estilos
             $html = "
             <!DOCTYPE html>
             <html lang='es'>
@@ -128,7 +128,7 @@ if (isset($_POST['idprofesores'])) {
             $dompdf->render();
             $pdfOutput = $dompdf->output();
 
-            // Save the PDF locally
+            // Guardar el PDF LOCAL
             $localPath = __DIR__ . "/Images2/felicitaciones/felicitacion_$nombre.pdf";
             file_put_contents($localPath, $pdfOutput);
 
@@ -151,7 +151,7 @@ if (isset($_POST['idprofesores'])) {
                 $mail->Subject = "Felicitaciones de BrillaUDG";
                 $mail->Body = "Hola $nombre,<br><br>¡Felicidades! Adjuntamos un PDF especial en tu honor.";
 
-                // Attach the PDF from local path
+                // Agrega el PDF de manera local
                 $mail->addAttachment($localPath);
 
                 $mail->send();

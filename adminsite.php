@@ -56,7 +56,7 @@ if (isset($_POST['actualizar'])) {
 <link rel="stylesheet" href="css/normalize.css">
 
 <head>
-    <title>Página de Citas</title>
+    <title>ADMIN SITE</title>
 </head>
 <body >
 <h1>Página de administrador</h1>
